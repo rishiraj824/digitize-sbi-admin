@@ -1,0 +1,71 @@
+@import url('https://fonts.googleapis.com/css?family=Lato:300,400,700,900');
+body, span, label, input, h1, h2, h3 , h4, h5, h6, p {
+  margin: 0;
+  padding: 0;
+  font-family: 'Lato',sans-serif;
+}
+.flex{
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: space-around;
+}
+.left{
+    align-self: center;
+}
+.button button{
+  background-color: #1A237E !important;
+}
+svg{
+  color: #1A237E !important;
+  fill: #1A237E !important;
+}
+hr {
+  border-bottom: 2px solid #1A237E !important;
+}
+.customInputField{
+    border: none;
+    background: #fff;
+    padding: 4px 4px 0 0;
+    width: 350px;
+    font-weight: 700;
+    font-size: 1.2em;
+    margin: 10px 0;
+}
+.error{
+  font-size: 14px;
+  color: #333;
+}
+.link{
+    border: 10px;
+    box-sizing: border-box;
+    display: inline-block;
+    font-family: Roboto, sans-serif;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+    cursor: pointer;
+    text-decoration: none;
+    margin: 0px;
+    padding: 0px;
+    outline: none;
+    font-size: inherit;
+    font-weight: inherit;
+    position: relative;
+    height: 36px;
+    line-height: 36px;
+    width: 100%;
+    border-radius: 2px;
+    transition: all 450ms cubic-bezier(0.23, 1, 0.32, 1) 0ms;
+    background-color: #1A237E ;
+    text-align: center;
+    color: #fff;
+}
+.customInputField::placeholder{
+  font-weight: 600;
+  font-size: 1.2em;
+}
+.customInputField:focus {
+    border: none;
+    outline: none;
+}
+.hidden{
+  display: none;
+}
