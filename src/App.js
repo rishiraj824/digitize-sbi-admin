@@ -163,8 +163,7 @@ constructor(props){
         return (
           <span className="flex">
             <div className="left">
-              <h2>Upload your recent photo.</h2>
-
+            <h2>Upload your recent photo.</h2>
             <form encType="multipart/form-data" action="http://apiplatformcloudse-gseapicssbisecond-uqlpluu8.srv.ravcloud.com:8001/FaceRecogCreate"
             method="POST" ref="form">
               <input type="file" name='user[image]' onChange={this.onFileChange}
@@ -193,15 +192,6 @@ constructor(props){
       return (
         <div style={contentStyle}>
             {this.state.error!==''?<h3>{this.state.error}</h3>:''}
-            <RaisedButton
-              primary={true}
-              className="button"
-              backgroundColor="#1976D2"
-                label="Back"
-                disabled={stepIndex === 0}
-                onClick={this.handlePrev}
-                style={{marginRight: 12}}
-            />
             <RaisedButton
               primary={true}
               label="Submit"
@@ -244,6 +234,7 @@ constructor(props){
 
     return (
       <div style={{width: '100%', maxWidth: 700, margin: 'auto'}}>
+        <h3>For Accessing Client Portal go to <a href="https://digitize-sbi.surge.sh" target="_blank">https://digitize-sbi.surge.sh</a></h3>
         <Stepper style={{'color':'#1976D2'}} activeStep={this.state.stepIndex}>
           <Step style={{'color':'#1976D2'}}>
             <StepLabel iconContainerStyle={{'color':'#1976D2'}}>Enter Aadhar Details</StepLabel>
