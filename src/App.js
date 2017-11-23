@@ -45,7 +45,7 @@ constructor(props){
     form.append('acc_no', this.state.accno);
     form.append('aadhar_card', this.state.aadhaar);
     form.append('image', this.state.file);
-    fetch('http://139.59.73.1:8000/upload', {
+    fetch('https://myffcs.in/upload', {
           method:'POST',
           body:form,
           'headers': {
